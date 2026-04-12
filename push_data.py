@@ -36,14 +36,14 @@ class NetworkDataExtract():
 
     def insert_data_mongodb(self, records, database, collection):
         try:
-            self.database   = database    # ✅ comma hata diya
-            self.collection = collection  # ✅ comma hata diya
-            self.records    = records     # ✅ comma hata diya
+            self.database   = database    
+            self.collection = collection  
+            self.records    = records     
 
             self.mongo_client = pymongo.MongoClient(MONGO_DB_URL, tlsCAFile=ca)
 
-            self.mongo_db         = self.mongo_client[self.database]    # ✅ DB object
-            self.mongo_collection = self.mongo_db[self.collection]      # ✅ DB se collection
+            self.mongo_db         = self.mongo_client[self.database]    
+            self.mongo_collection = self.mongo_db[self.collection]      
 
             self.mongo_collection.insert_many(self.records)
             return len(self.records)
