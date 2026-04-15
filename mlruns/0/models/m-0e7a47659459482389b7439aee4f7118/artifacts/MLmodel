@@ -1,0 +1,23 @@
+artifact_path: /Users/vinayakgarg/Desktop/NETWORKSECURITY/mlruns/0/models/m-0e7a47659459482389b7439aee4f7118/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-0e7a47659459482389b7439aee4f7118
+model_size_bytes: 27376482
+model_uuid: m-0e7a47659459482389b7439aee4f7118
+prompts: null
+run_id: 48b364fa38674b28b3bb0c4d0fa2c711
+utc_time_created: '2026-04-15 10:57:24.354333'
