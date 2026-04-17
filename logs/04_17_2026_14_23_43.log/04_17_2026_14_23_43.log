@@ -1,0 +1,6 @@
+[2026-04-17 14:23:46,059] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-04-17 14:23:46,065] 107 dagshub - INFO - Accessing as vinugarg2005-cell
+[2026-04-17 14:23:47,455] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vinugarg2005-cell/networksecurity "HTTP/1.1 200 OK"
+[2026-04-17 14:23:48,580] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-04-17 14:23:48,582] 107 dagshub - INFO - Initialized MLflow to track repo "vinugarg2005-cell/networksecurity"
+[2026-04-17 14:23:48,583] 107 dagshub - INFO - Repository vinugarg2005-cell/networksecurity initialized!
