@@ -53,6 +53,13 @@ if uploaded_file is not None:
             1: "Safe"
         })
 
+        prediction = df["Prediction_Label"].iloc[0]
+
+        if prediction == "Phishing":
+            st.error(f"⚠️ Website Prediction: {prediction}")
+        else:
+            st.success(f"✅ Website Prediction: {prediction}")
+
         st.subheader("Prediction Results")
         st.dataframe(df)
 
