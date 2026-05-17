@@ -107,6 +107,18 @@ class ModelTrainer:
 
 
         y_test_pred = best_model.predict(x_test)
+        from sklearn.metrics import classification_report
+        from sklearn.metrics import confusion_matrix
+        from sklearn.metrics import accuracy_score
+
+        print("Accuracy:", accuracy_score(y_test, y_test_pred))
+
+        print("\nConfusion Matrix:")
+        print(confusion_matrix(y_test, y_test_pred))
+
+        print("\nClassification Report:")
+        print(classification_report(y_test, y_test_pred))
+        
         classification_test_metric=get_classification_score(y_true=y_test,y_pred=y_test_pred)
 
         self.track_mlflow(best_model,classification_test_metric)

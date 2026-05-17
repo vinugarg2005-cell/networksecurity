@@ -5,4 +5,8 @@ COPY . /app
 RUN apt update -y && apt install awscli -y
 
 RUN apt-get update && pip install -r requirements.txt
-CMD ["python3", "app.py"]
+COPY . .
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]

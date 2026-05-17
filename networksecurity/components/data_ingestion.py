@@ -43,7 +43,7 @@ class DataIngestion:
                 df=df.drop(columns=["_id"],axis=1)
 
             df.replace({"na":np.nan},inplace=True)
-
+            print(df[df["Result"] == -1].head(1).to_dict())
             return df
         
         except Exception as e:
